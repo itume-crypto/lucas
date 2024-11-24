@@ -1,0 +1,167 @@
+import React from "react";
+
+export default function App() {
+  return (
+    <div style={styles.body}>
+      {/* Header Section */}
+      <header style={styles.header}>
+        <h1>Trading with Itumeleng Mathole</h1>
+        <p>Sharing insights, strategies, and experiences in Forex trading. Start learning today!</p>
+      </header>
+
+      {/* Navigation */}
+      <nav style={styles.nav}>
+        <a href="#about" style={styles.link}>About</a>
+        <a href="#strategies" style={styles.link}>Strategies</a>
+        <a href="#best-strategies" style={styles.link}>Best Strategies</a>
+        <a href="#sessions" style={styles.link}>One-on-One Sessions</a>
+        <a href="#contact" style={styles.link}>Contact</a>
+      </nav>
+
+      {/* Main Content */}
+      <main style={styles.container}>
+        {/* About Section */}
+        <section id="about" style={styles.section}>
+          <h2 style={styles.sectionTitle}>About Me</h2>
+          <p>
+            Welcome to my trading website! My name is Itumeleng Mathole, and I've dedicated myself to learning and mastering Forex trading. 
+            Throughout my journey, I've encountered both challenges and successes, and I believe that sharing my experiences with others can 
+            help aspiring traders achieve their goals.
+          </p>
+        </section>
+
+        {/* Strategies Section */}
+        <section id="strategies" style={styles.section}>
+          <h2 style={styles.sectionTitle}>Forex Trading Strategies</h2>
+          <div style={styles.post}>
+            <h3>Step 1: Clarifying Requirements and Scoping</h3>
+            <p>
+              The first step in any successful Forex trading strategy is understanding your trading goals. 
+              Do you want to trade part-time or full-time? Are you focused on short-term gains or long-term investments? 
+              Clarifying these goals will help you choose the right strategy and risk management approach.
+            </p>
+          </div>
+        </section>
+
+        {/* One-on-One Sessions Section */}
+        <section id="sessions" style={styles.section}>
+          <h2 style={styles.sectionTitle}>One-on-One Sessions on WhatsApp</h2>
+          <p>
+            We offer personalized one-on-one trading sessions through WhatsApp for beginners. Whether you're just starting or need some 
+            extra help to improve your trading skills, I am here to guide you every step of the way.
+          </p>
+          <p>
+            To book your session, simply reach out via WhatsApp at <a href="https://wa.me/0832983821" style={styles.link}>itu-traders</a>, 
+            and we'll schedule a time that works for you.
+          </p>
+        </section>
+
+        {/* Best Strategies Section */}
+        <section id="best-strategies" style={styles.section}>
+          <h2 style={styles.sectionTitle}>Best Forex Trading Strategies</h2>
+          <div style={styles.post}>
+            <h3>Trend Trading</h3>
+            <p>
+              Trend trading is about riding the wave of a market trend. It's a strategy that focuses on identifying long-term trends and 
+              entering trades that align with these movements.
+            </p>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" style={styles.section}>
+          <h2 style={styles.sectionTitle}>Contact Me</h2>
+          <div>
+            <p>If you have questions, feedback, or just want to connect about Forex trading, feel free to reach out!</p>
+            <ul style={styles.contactList}>
+              <li>Email: <a href="mailto:itumelengmathole29@gmail.com" style={styles.link}>itumelengmathole29@gmail.com</a></li>
+              <li>Phone: <a href="tel:+27832983821" style={styles.link}>083 298 3821</a></li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Ratings Section */}
+        <section id="rating" style={styles.section}>
+          <h2 style={styles.sectionTitle}>Ratings & Reviews</h2>
+          <div style={styles.rating}>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>“This was an amazing learning experience! I’ve gained so much knowledge about Forex and the strategies I should be using.” – Jane Doe</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>“One-on-one sessions on WhatsApp were really helpful. My confidence has skyrocketed thanks to Itumeleng’s insights.” – John Smith</p>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer style={styles.footer}>
+        <p>&copy; 2024 Itumeleng Mathole. Designed for modern traders.</p>
+      </footer>
+    </div>
+  );
+}
+
+// Styles Object
+const styles = {
+  body: {
+    fontFamily: "Arial, sans-serif",
+    margin: 0,
+    padding: 0,
+    color: "#333",
+    lineHeight: "1.6",
+  },
+  header: {
+    backgroundColor: "#4a90e2",
+    color: "#fff",
+    textAlign: "center",
+    padding: "2rem",
+  },
+  nav: {
+    backgroundColor: "#3b5998",
+    display: "flex",
+    justifyContent: "center",
+    padding: "0.5rem 0",
+  },
+  link: {
+    color: "#fff",
+    margin: "0 1rem",
+    textDecoration: "none",
+    fontSize: "1.1rem",
+  },
+  container: {
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "2rem",
+  },
+  section: {
+    marginBottom: "2rem",
+  },
+  sectionTitle: {
+    fontSize: "2rem",
+    color: "#3b5998",
+    textAlign: "center",
+    marginBottom: "1rem",
+  },
+  post: {
+    backgroundColor: "#fff",
+    padding: "1.5rem",
+    borderRadius: "8px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    marginBottom: "1rem",
+  },
+  contactList: {
+    listStyle: "none",
+    padding: 0,
+  },
+  rating: {
+    textAlign: "center",
+    fontSize: "1.2rem",
+    marginTop: "1.5rem",
+  },
+  footer: {
+    backgroundColor: "#3b5998",
+    color: "#fff",
+    textAlign: "center",
+    padding: "1.5rem 0",
+    marginTop: "2rem",
+  },
+};
